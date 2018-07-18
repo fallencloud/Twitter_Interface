@@ -4,14 +4,14 @@ const Twit = require('twit');
 const $ = require('cheerio');
 
 const app = express();
-const {conKey} = require('./config.js');
-const {conSecret} = require('./config.js');
-const {accToken} = require('./config.js');
-const {accSecret} = require('./config.js');
+const {conKey} = require('./js/config.js');
+const {conSecret} = require('./js/config.js');
+const {accToken} = require('./js/config.js');
+const {accSecret} = require('./js/config.js');
 const port = 3000;
 
 //declarations
-const {myId} = require('./config.js');
+const {myId} = require('./js/config.js');
 
 const T = new Twit({
   consumer_key:         conKey,
